@@ -1,4 +1,4 @@
-# 🌱 Smart Automatic Watering System
+# Smart Automatic Watering System
 
 An Arduino-based automatic watering system with real-time soil moisture and water tank level monitoring. The system automatically waters plants when the soil moisture falls below a predefined threshold. A second version of the project adds Wi-Fi connectivity for remote monitoring and control.
 
