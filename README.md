@@ -1,5 +1,7 @@
 This is my first personal project showcasing a automatic watering system for plants.
 the project relies on sensors that capture the water level of a water tank and the moisture of the soil. The information is then collected to make decisions about watering the plant.
+
+
 Hardware used:
 - Arduino nano esp32
 - Relay module
@@ -11,3 +13,20 @@ Hardware used:
 - Solar panel (5V, 10Watt, 210x130x1.5mm)
 - A solar management board that provides a regulated output from the solar panel.
 - a water pump and water tank
+
+How the project works:
+- The ultrasonic sensor calculates the distance between the surface of the water and the sensor, the distance is then used to calculate the water level of the tank
+- The resistive soil sensor is used to obtain the soil moisture sensor.
+- When the soil becomes dry, the system activates the pump.
+- When the water level becomes too low, the system stops the watering and provides a warning.
+- The lcd display displays the moisture level and the water level.
+- the system is powered by a lithium battery and the pump is powered by an external source.
+
+Power usage estimation:
+- The entire system without the pump draws approximately 150mA of current with a 5V source, so that means 0.75W.
+- The battery has a capacity of 2600mAH and works in 3.7V, that means it has a capacity of 9.62W.h
+- The solar panels provide at best 10W, so for average, 5W.
+- That means that the system could last on a full charge 12 hours without sunlight.
+- When we include the solar panels, the system would have a surplus of 4.25W for charging the battery, so theoretically the system could run 24/7 if there is enough sunlight.
+    
+The first iteration of this project works without the online features.
